@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ekran.css">
+</head>
+<body>
+<div id="ekran">
+     <div class="tugma">
+        <label for="boshi">BOSHI </label><input type="number" min="0" max="999" name="boshi" id="boshi" value="0">
+        <label for="oxiri">OXIRI </label><input type="number" min="0" max="999"name="oxiri" id="oxiri" value="0">
+       <span><input type="radio" name="tanla" value="ot" id="ot">OT</span>
+       <span><input type="radio" name="tanla" value="sifat" checked id="sifat">SIFAT </span>
+       <span><input type="radio" name="tanla" value="fel" id="fel">FE'L    </span> 
+       <!-- <label for="boshi">TEZLIK </label><input type="number" min="2" max="20" step=2 name="tezlik" id="tezlik" value="2" onchange="tezlik(this.value)""> -->
+       <button onclick="natija();vaqt()">START</button>
+       <button onclick="timeout()">STOP</button>
+       
+     </div>
+    <div id="card">
+        <div id="frond"> <p id="uzb">UZB</p> </div>
+        
+        <div id="back"><p id="rus">RUS</p> </div>   
+
+    </div>
+</div>
+<script src="js/ekran.js"></script>
+</body>
+</html>
